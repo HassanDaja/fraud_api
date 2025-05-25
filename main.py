@@ -9,8 +9,7 @@ model = joblib.load('fraud_detection_pipeline_cpu.pkl')
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
+    return "Hello from Flask!"
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
